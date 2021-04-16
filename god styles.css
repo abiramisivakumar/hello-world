@@ -1,0 +1,105 @@
+body
+{
+margin: 0;/*to make sure remove excess margin*/
+font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+
+ }
+.zone{
+    cursor:pointer;/*to change the cursor as pointer*/
+    font-size:2em;/* changing the font size*/
+     /*transition: all 0.3s linear;/* makes transition*/
+}
+/*.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}*/
+
+
+nav{
+	background: url("image/header.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+/*for header*/
+.main-nav
+{
+    display: flex; /*to activate flex box in header*/
+    list-style: none;/* to remove the buttons*/
+    font-size: 0.7em;/* to change the font size*/
+    margin:0;/* to remove the margins*/
+
+}
+li
+{
+    padding: 40px;/* to make spacing between list items*/
+    
+}
+.push
+{ 
+margin-left :auto; /* to push the contacts to left corner*/
+}
+a
+{
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;/* to remove the underline*/
+}
+.white
+{
+
+background-color: white;/* center background color*/
+margin: 0px 0px;/*to remove the padding*/
+padding-left: 100px;
+}
+img
+{
+width: 100px;
+height: 400px;
+
+}
+.container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+
+}
+
+.grid{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+.box > img
+{
+	width:68%;
+
+}
+.box{
+  background-color: white;
+  border-style: dotted black;
+}
+
+/*.yellow 
+{
+background: url("image/brown.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}*/
+@media only screen and (max-width: 100px)/* to make responsive
+{
+	/* this will work when the max width is less than 600px*/
+.main-nav{
+ font-size: 0.5em;   
+ padding: 0;
+}
